@@ -45,6 +45,7 @@
             this.MovieComboBox.Location = new System.Drawing.Point(12, 12);
             this.MovieComboBox.Name = "MovieComboBox";
             this.MovieComboBox.Size = new System.Drawing.Size(260, 110);
+            this.MovieComboBox.Sorted = true;
             this.MovieComboBox.TabIndex = 0;
             this.MovieComboBox.SelectedIndexChanged += new System.EventHandler(this.MovieComboBox_SelectedIndexChanged);
             // 

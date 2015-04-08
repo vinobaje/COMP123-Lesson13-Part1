@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace COMP123_Lesson13_Part1
 {
     // MOVIE CLASS
-    public class Movie
+    public class Movie : IComparable<Movie>
     {
         // PRIVATE INSTANCE VARIABLES
         private string _title;
@@ -44,6 +44,19 @@ namespace COMP123_Lesson13_Part1
             this._title = title;
             this._category = category;
             this._cost = cost;
+        }
+
+
+        // PUBLIC METHODS
+        // Default comparer for Movie type - compares the title property
+        public int CompareTo(Movie compareMovie)
+        {
+            // A null value means that this object is greater. 
+            if (compareMovie == null)
+                return 1;
+
+            else
+                return this._title.CompareTo(compareMovie._title);
         }
     }
 }

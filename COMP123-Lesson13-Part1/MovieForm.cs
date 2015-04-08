@@ -46,7 +46,7 @@ namespace COMP123_Lesson13_Part1
         {
             int movieIndex = MovieComboBox.SelectedIndex;
 
-
+            movies.Sort();
             MovieTitleTextBox.Text = movies[movieIndex].Title;
             MovieCategoryTextBox.Text = movies[movieIndex].Category;
             MovieCostTextBox.Text = movies[movieIndex].Cost.ToString();
