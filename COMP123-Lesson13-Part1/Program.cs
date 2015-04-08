@@ -16,7 +16,7 @@ namespace COMP123_Lesson13_Part1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MovieForm());
+            Application.Run(new SplashForm());
         }
     }
 }

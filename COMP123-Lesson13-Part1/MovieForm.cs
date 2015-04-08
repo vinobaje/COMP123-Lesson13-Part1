@@ -16,6 +16,9 @@ namespace COMP123_Lesson13_Part1
         //public Movie[] movies = new Movie[20];
         public List<Movie> movies = new List<Movie>();
 
+        // private instance variables
+        int _movieIndex;
+
         public MovieForm()
         {
             InitializeComponent();
@@ -44,17 +47,27 @@ namespace COMP123_Lesson13_Part1
 
         private void MovieComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int movieIndex = MovieComboBox.SelectedIndex;
+            this._movieIndex = MovieComboBox.SelectedIndex;
 
             movies.Sort();
-            MovieTitleTextBox.Text = movies[movieIndex].Title;
-            MovieCategoryTextBox.Text = movies[movieIndex].Category;
-            MovieCostTextBox.Text = movies[movieIndex].Cost.ToString();
+            MovieTitleTextBox.Text = movies[this._movieIndex].Title;
+            MovieCategoryTextBox.Text = movies[this._movieIndex].Category;
+            MovieCostTextBox.Text = movies[this._movieIndex].Cost.ToString();
         }
 
         private void MovieForm_Load(object sender, EventArgs e)
         {
             MovieComboBox.SelectedIndex = 0;
         }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            EndForm endForm = new EndForm(movies[this._movieIndex]);
+
+            this.Hide();
+            endForm.Owner = this;
+            endForm.Show();
+        }
+
     }
 }

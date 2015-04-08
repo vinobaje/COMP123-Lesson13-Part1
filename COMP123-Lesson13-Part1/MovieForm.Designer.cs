@@ -35,6 +35,7 @@
             this.MovieCategoryTextBox = new System.Windows.Forms.TextBox();
             this.MovieCostLabel = new System.Windows.Forms.Label();
             this.MovieCostTextBox = new System.Windows.Forms.TextBox();
+            this.NextButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MovieComboBox
@@ -103,12 +104,24 @@
             this.MovieCostTextBox.Size = new System.Drawing.Size(259, 29);
             this.MovieCostTextBox.TabIndex = 5;
             // 
+            // NextButton
+            // 
+            this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextButton.Location = new System.Drawing.Point(102, 368);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(75, 37);
+            this.NextButton.TabIndex = 7;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
             // MovieForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 360);
+            this.ClientSize = new System.Drawing.Size(284, 417);
             this.ControlBox = false;
+            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.MovieCostLabel);
             this.Controls.Add(this.MovieCostTextBox);
             this.Controls.Add(this.MovieCategoryLabel);
@@ -137,6 +150,7 @@
         private System.Windows.Forms.TextBox MovieCategoryTextBox;
         private System.Windows.Forms.Label MovieCostLabel;
         private System.Windows.Forms.TextBox MovieCostTextBox;
+        private System.Windows.Forms.Button NextButton;
     }
 }
 
