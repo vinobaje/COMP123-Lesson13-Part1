@@ -36,6 +36,7 @@
             this.MovieCostLabel = new System.Windows.Forms.Label();
             this.MovieCostTextBox = new System.Windows.Forms.TextBox();
             this.NextButton = new System.Windows.Forms.Button();
+            this.AboutButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MovieComboBox
@@ -107,7 +108,7 @@
             // NextButton
             // 
             this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.Location = new System.Drawing.Point(102, 368);
+            this.NextButton.Location = new System.Drawing.Point(196, 368);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(75, 37);
             this.NextButton.TabIndex = 7;
@@ -115,12 +116,24 @@
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
+            // AboutButton
+            // 
+            this.AboutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AboutButton.Location = new System.Drawing.Point(12, 368);
+            this.AboutButton.Name = "AboutButton";
+            this.AboutButton.Size = new System.Drawing.Size(75, 37);
+            this.AboutButton.TabIndex = 8;
+            this.AboutButton.Text = "About";
+            this.AboutButton.UseVisualStyleBackColor = true;
+            this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
+            // 
             // MovieForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 417);
             this.ControlBox = false;
+            this.Controls.Add(this.AboutButton);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.MovieCostLabel);
             this.Controls.Add(this.MovieCostTextBox);
@@ -151,6 +164,7 @@
         private System.Windows.Forms.Label MovieCostLabel;
         private System.Windows.Forms.TextBox MovieCostTextBox;
         private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button AboutButton;
     }
 }
 

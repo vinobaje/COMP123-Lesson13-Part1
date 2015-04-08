@@ -69,5 +69,12 @@ namespace COMP123_Lesson13_Part1
             endForm.Show();
         }
 
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            AboutBox1 aboutBox = new AboutBox1();
+
+            aboutBox.ShowDialog();
+        }
+
     }
 }
